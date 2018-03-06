@@ -1,0 +1,33 @@
+{
+	"name": "flarumbeta",
+	"text": "Install Flarum Beta\\nMySQL root password: %1\\nFlarum DB Name: flarum_%2\\nFlarum DB password: %3\\nRequires internet connection",
+	"script": "flarumbeta.sh",
+	"args": [
+		{
+			"type": "text",
+			"default": "mysql-password",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "domain-name",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "flarum-db-pass",
+			"maxLength":0
+		}
+
+	],
+	"network": true,
+	"continue": true,
+	"type": "software",
+	"category":"software",
+	"supportedOperatingSystems": [
+		"raspbian-pibakery.img",
+		"raspbian-lite-pibakery.img"
+	],
+	"shortDescription":"Install Flarum Beta on your Raspberry Pi. Requires internet connection.",
+	"longDescription":"Creates Flarum database, installs Flarum via Composer."
+}
